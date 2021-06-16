@@ -6,7 +6,9 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class Create {
-    Secrets secrets = new Secrets();
+
+    private Secrets secrets = new Secrets();
+
     public void createNewTable(String query) {
         try {
             Connection connection = DriverManager.getConnection(secrets.getUrl(), secrets.getUsername(), secrets.getPassword());
