@@ -1,7 +1,11 @@
 # SQL Library
 
 # How to use:
-Set up username, password and url for db by using Secrets.java methods
+Set up username, password and url for db by instantiating a Secrets
+object using Secrets.java methods. `Secrets secrets = new Secrets();`
+`secrets.setUsername(username_goes_here);`
+`secrets.setPassword(password_goes_here);`
+`secrets.setUrl(url_goes_here);`
 getters and setters at the beginning of your application
 
 ## Relational SQL services support:
