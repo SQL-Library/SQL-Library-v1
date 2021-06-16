@@ -1,4 +1,4 @@
 package com.apinanyogaratnam;
 
-public class Read {
+public class Read extends SQL{
 }

@@ -2,27 +2,27 @@ package com.apinanyogaratnam;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class Create extends SQL{
+abstract class SQL {
 
-    public void createNewTable(String query) {
+    Secrets secrets = new Secrets();
+
+    public void SQLCommand(String query) {
         try {
+            // get a connection to database
             Connection connection = DriverManager.getConnection(secrets.getUrl(), secrets.getUsername(), secrets.getPassword());
+
+            // create a statement
             Statement statement = connection.createStatement();
 
-            // create new table, add more parameters to method for attributes about the table
+            // insert data into database
             statement.executeUpdate(query);
 
-            // close connection to db
+            // close connection to server
             connection.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    public void createNewObject(String query) {
-
     }
 }
