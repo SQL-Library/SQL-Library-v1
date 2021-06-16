@@ -8,3 +8,4 @@ getters and setters at the beginning of your application
 ### - Postgres
 ### - MySQL
 ### - SQL Server
+### - Oracle Database
