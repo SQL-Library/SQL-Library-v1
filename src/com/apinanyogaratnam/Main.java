@@ -6,6 +6,5 @@ public class Main {
 	// write your code here
         System.out.println("printing working");
 
-        Delete deleteSQLMethods = new Delete();
     }
 }
