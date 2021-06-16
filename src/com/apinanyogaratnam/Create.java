@@ -23,4 +23,8 @@ public class Create {
             e.printStackTrace();
         }
     }
+
+    public void createNewObject(String query) {
+
+    }
 }
