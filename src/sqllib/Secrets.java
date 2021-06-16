@@ -1,4 +1,4 @@
-package com.apinanyogaratnam;
+package sqllib;
 
 public class Secrets {
     private String username;

@@ -1,8 +1,4 @@
-package com.apinanyogaratnam;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.Statement;
+package sqllib;
 
 abstract class SQL {
 
