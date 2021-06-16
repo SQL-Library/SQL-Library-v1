@@ -1,4 +1,6 @@
-package sqllib;
+package sqllib.Interfaces;
+
+import sqllib.Create;
 
 public interface Creatable {
 

@@ -1,4 +1,6 @@
-package sqllib;
+package sqllib.Interfaces;
+
+import sqllib.Delete;
 
 public interface Deletable {
 
