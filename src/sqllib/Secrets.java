@@ -13,19 +13,19 @@ public class Secrets {
         this.username = username;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
     public String getPassword() {
         return this.password;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public String getUrl() {
         return this.url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
