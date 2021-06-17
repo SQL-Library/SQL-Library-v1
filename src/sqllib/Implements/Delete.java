@@ -6,5 +6,4 @@ public class Delete extends SQL {
             String query = String.format("DROP TABLE %s", tableName);
             SQLCommand(query);
     }
-
 }

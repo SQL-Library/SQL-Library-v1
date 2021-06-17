@@ -9,5 +9,4 @@ public interface Deletable {
     static void deleteTable(String query) {
         delete.deleteTable(query);
     }
-
 }

@@ -9,5 +9,4 @@ public interface Creatable {
     static void createNewTable(String query) {
         create.createNewTable(query);
     }
-
 }
