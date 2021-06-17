@@ -3,7 +3,6 @@ package sqllib;
 import sqllib.Interfaces.Creatable;
 import sqllib.Interfaces.Deletable;
 import sqllib.Interfaces.Readable;
-
 import java.util.LinkedList;
 
 public class Main {
@@ -16,8 +15,8 @@ public class Main {
         credentials.setUsername("apinan");
         credentials.setPassword("admin");
 
-        String[] columnsLabels = {"first_name", "last_name", "username", "friends", "companies"};
-        print(Readable.readDB("users", columnsLabels, credentials));
+//        String[] columnsLabels = {"first_name", "last_name", "username", "friends", "companies"};
+//        print(Readable.readDB("users", columnsLabels, credentials));
     }
 
     public static void print(LinkedList<String[]> databaseData) {
@@ -29,5 +28,4 @@ public class Main {
             System.out.println();
         }
     }
-
 }

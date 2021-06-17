@@ -2,12 +2,11 @@
 
 # How to use:
 Set up username, password and url for db by instantiating a Secrets <br />
-object using Secrets.java methods. <br />
+object using Secrets.java methods. Use Secrets setters at the beginning of your application <br />
 `Secrets credentials = new Secrets();` <br />
 `secrets.setUsername(username_goes_here);` <br />
 `secrets.setPassword(password_goes_here);` <br />
 `secrets.setUrl(url_goes_here);` <br />
-getters and setters at the beginning of your application
 
 ## Relational SQL services support:
 #### - Postgres
