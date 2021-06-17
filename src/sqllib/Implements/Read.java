@@ -1,5 +1,6 @@
 package sqllib.Implements;
 
+import sqllib.Secrets;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -8,12 +9,12 @@ import java.util.LinkedList;
 
 public class Read extends SQL {
 
-    public LinkedList<String[]> readDB(String tableName, String[] columnLabels) {
+    public LinkedList<String[]> readDB(String tableName, String[] columnLabels, Secrets credentials) {
         LinkedList<String[]> databaseData = new LinkedList<>();
 
         try {
             // get a connection to database
-            Connection connection = DriverManager.getConnection(secrets.getUrl(), secrets.getUsername(), secrets.getPassword());
+            Connection connection = DriverManager.getConnection(credentials.getUrl(), credentials.getUsername(), credentials.getPassword());
 
             // create a statement
             Statement statement = connection.createStatement();

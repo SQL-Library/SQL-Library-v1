@@ -1,22 +1,33 @@
 package sqllib;
 
-import sqllib.Implements.Create;
 import sqllib.Interfaces.Creatable;
 import sqllib.Interfaces.Deletable;
 import sqllib.Interfaces.Readable;
+
+import java.util.LinkedList;
 
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Secrets secrets = new Secrets();
+        Secrets credentials = new Secrets();
 
-        secrets.setUrl("jdbc:postgresql://localhost/test");
-        secrets.setUsername("apinan");
-        secrets.setPassword("admin");
+        credentials.setUrl("jdbc:postgresql://localhost/test");
+        credentials.setUsername("apinan");
+        credentials.setPassword("admin");
 
         String[] columnsLabels = {"first_name", "last_name", "username", "friends", "companies"};
-        Readable.readDB("users", columnsLabels);
+        print(Readable.readDB("users", columnsLabels, credentials));
+    }
+
+    public static void print(LinkedList<String[]> databaseData) {
+        for (String[] s : databaseData) {
+            for (String item : s) {
+                System.out.print(item + ",");
+            }
+
+            System.out.println();
+        }
     }
 
 }

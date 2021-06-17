@@ -10,10 +10,10 @@ abstract class SQL {
 
     public Secrets secrets = new Secrets();
 
-    public void SQLCommand(String query) {
+    public void SQLCommand(String query, Secrets credentials) {
         try {
             // get a connection to database
-            Connection connection = DriverManager.getConnection(secrets.getUrl(), secrets.getUsername(), secrets.getPassword());
+            Connection connection = DriverManager.getConnection(credentials.getUrl(), credentials.getUsername(), credentials.getPassword());
 
             // create a statement
             Statement statement = connection.createStatement();

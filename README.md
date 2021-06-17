@@ -3,7 +3,7 @@
 # How to use:
 Set up username, password and url for db by instantiating a Secrets <br />
 object using Secrets.java methods. <br />
-`Secrets secrets = new Secrets();` <br />
+`Secrets credentials = new Secrets();` <br />
 `secrets.setUsername(username_goes_here);` <br />
 `secrets.setPassword(password_goes_here);` <br />
 `secrets.setUrl(url_goes_here);` <br />
