@@ -1,4 +1,4 @@
-# SQL Library
+# [DEPRECATED] SQL Library
 
 # How to use:
 Set up username, password and url for db by instantiating a Secrets <br />
